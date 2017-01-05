@@ -31,6 +31,6 @@ public class UserController {
     @RequestMapping(value = "/addUser.do", method = RequestMethod.GET)
     public String add() {
         boolean isOk = userService.addUser(new User(RandomValue.getChineseName(),RandomValue.getPassword()));
-        return isOk == true ? "SUCCESS！" : "FAIL！";
+        return isOk == true ? "SUCCESS！GREAT！" : "FAIL！";
     }
 }
